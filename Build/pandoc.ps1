@@ -28,13 +28,17 @@ function AddVersionFooter{
     $Footer = $Section.Footers.Item(1)
     $Footer.Range.Text = "Version: " + $versionData
     $Doc.Save()
+    # save pdf also
+    $pdf_filename = ($filePath).replace('docx', 'pdf')
+    $Doc.SaveAs($pdf_filename, 17)
     $Doc.Close()
     CloseWord
 }
 
 function ConvertMarkdownToWord{
     param($inputFile, $outputFile, $versionData)
-    pandoc $inputFile -o $outputFile --reference-docx=template.docx 
+    Write-Host "Converting $inputFile"
+    pandoc $inputFile.FullName -o $outputFile --reference-docx=template.docx 
     AddVersionFooter $outputFile $versionData
 }
 
@@ -52,15 +56,15 @@ New-Item -ItemType Directory -Force -Path $docsOutputDirectory
 CloseWord
 
 ' Create Lab Word Documents'
-foreach($file in Get-ChildItem $docsInputDirectory | Where-Object {$_.Extension -eq ".md"})
+foreach($file in Get-ChildItem $docsInputDirectory -Recurse | Where-Object {$_.Extension -eq ".md"})
 {
-    $inputFile = $docsInputDirectory + $file.Name;
+    $inputFile = $file;
     $outputFile = $docsOutputDirectory + $file.BaseName + '.docx'
     ConvertMarkdownToWord $inputFile $outputFile $version
 }
 
 ' Copy AllFiles '
-Copy-Item $filesInputDirectory –Destination $outputDirectory -Recurse -Container
+' Copy-Item $filesInputDirectory –Destination $outputDirectory -Recurse -Container '
 
 ' Compress AllFiles & Lab Instructions '
 ZipFiles $filesOutputDirectory $docsOutputDirectory $version
