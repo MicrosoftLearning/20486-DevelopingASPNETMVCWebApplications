@@ -7,7 +7,7 @@
 #### Demonstration Steps
 
 1. On the **File** menu of the **Start Page - Microsoft Visual Studio** page, point to **New,** and then click **Project.**
-2. In the navigation pane of the **New Project** dialog box, expand **Installed**, expand **Templates**, and then expand **Visual C#**.
+2. In the navigation pane of the **New Project** page, expand **Installed**, expand **Templates**, and then expand **Visual C#**.
 3. Under **Visual C#**, click **Web**, and then, in the result pane, click **ASP.NET MVC 4 Web Application**.
 4. In the **Name** text box of the **New Project** dialog box, type **OperasWebSites**.
 5. In the **New Project** dialog box, click **Browse**.
