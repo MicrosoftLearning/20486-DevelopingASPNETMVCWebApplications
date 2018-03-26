@@ -9,8 +9,8 @@
 <div id="chat-photo-display">
 @if (Model.PhotoFile != null) {
     <div class="photo-display">
-        <a href="@Url.Action("Display", "Photo", new { id = Model.PhotoID })">
-            <img width="200" src="@Url.Action("GetImage", "Photo", new { id = Model.PhotoID })" />
+        <a href="@Url.Action("Display", "Photo", new { id = Model.PhotoId })">
+            <img width="200" src="@Url.Action("GetImage", "Photo", new { id = Model.PhotoId })" />
         </a>
     </div>
 }
@@ -33,7 +33,7 @@
 <script type="text/javascript">
 
     var username = '@User.Identity.Name';
-      	var photoid = @Model.PhotoID
+      	var photoid = @Model.PhotoId
 
 
 </script>

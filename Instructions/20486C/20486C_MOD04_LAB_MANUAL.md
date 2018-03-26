@@ -30,7 +30,7 @@ Estimated Time: **60 minutes**
 In this exercise, you will create the MVC controller that handles photo operations. You will also add the following actions:
 
 - _Index_. This action gets a list of all the Photo objects and passes the list to the Index view for display.
-- _Display_.This action takes an ID to find a single Photo object. It passes the Photo to the Display view for display.
+- _Display_.This action takes an Id to find a single Photo object. It passes the Photo to the Display view for display.
 - _Create (GET)_.This action creates a new Photo object and passes it to the Create view, which displays a form that the visitor can use to upload a photo and describe it.
 - _Create (POST)_. This action receives a Photo object from the Create view and saves the details to the database.
 - _Delete (GET)_.This action displays a Photo object and requests confirmation from the user to delete the Photo object.
@@ -90,9 +90,9 @@ The main tasks for this exercise are as follows:
    - Name: **Display**
    - Parameters: One integer called **id**
 
-2. Within the **Display** action code block, add code to find a single **photo** object from its **ID**.
-3. If no photo with the right ID is found, return the **HttpNotFound** value.
-4. If a photo with the right ID is found, pass it to a view called **Display**.
+2. Within the **Display** action code block, add code to find a single **photo** object from its **Id**.
+3. If no photo with the right Id is found, return the **HttpNotFound** value.
+4. If a photo with the right Id is found, pass it to a view called **Display**.
 
 #### Task 4: Write the Create actions for GET and POST HTTP verbs
 
@@ -250,9 +250,9 @@ The main tasks for this exercise are as follows:
    - Model class: **Photo(PhotoSharingapplication.Models)**
    - Scaffold template: **Details**
 4. Locate the folowing code:
-```@Html.ActionLink("Details", "Details", new {id=item.PhotoID})```
+```@Html.ActionLink("Details", "Details", new {id=item.PhotoId})```
 5. replace the code you located with the following code
-```@Html.ActionLink("Display", "Display", new {id=item.PhotoID})```
+```@Html.ActionLink("Display", "Display", new {id=item.PhotoId})```
 
 #### Task 2: Use the GetImage action in the Display view
 
@@ -267,7 +267,7 @@ The main tasks for this exercise are as follows:
 
    - Controller: **Photo**
    - Action: **GetImage**
-   - Parameters: **Model.PhotoID**
+   - Parameters: **Model.PhotoId**
 
 4. Save the file.
 5. Build the solution.

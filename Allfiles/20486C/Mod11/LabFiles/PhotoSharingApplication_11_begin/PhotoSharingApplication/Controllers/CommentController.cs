@@ -26,7 +26,7 @@ namespace PhotoSharingApplication.Controllers
         public PartialViewResult _CommentsForPhoto(int PhotoId)
         {
             var comments = from c in context.Comments
-                           where c.PhotoID == PhotoId
+                           where c.PhotoId == PhotoId
                            select c;
 
             ViewBag.PhotoId = PhotoId;
@@ -38,7 +38,7 @@ namespace PhotoSharingApplication.Controllers
         public ActionResult Delete(int id = 0)
         {
             Comment comment = context.FindCommentById(id);
-            ViewBag.PhotoID = comment.PhotoID;
+            ViewBag.PhotoId = comment.PhotoId;
             if (comment == null)
             {
                 return HttpNotFound();
@@ -54,15 +54,15 @@ namespace PhotoSharingApplication.Controllers
             Comment comment = context.FindCommentById(id);
             context.Delete<Comment>(comment);
             context.SaveChanges();
-            return RedirectToAction("Display", "Photo", new { id = comment.PhotoID });
+            return RedirectToAction("Display", "Photo", new { id = comment.PhotoId });
         }
 
         public PartialViewResult _Create(int PhotoId)
         {
             Comment newComment = new Comment();
-            newComment.PhotoID = PhotoId;
+            newComment.PhotoId = PhotoId;
 
-            ViewBag.PhotoID = PhotoId;
+            ViewBag.PhotoId = PhotoId;
 
             return PartialView("_CreateAComment");
         }
@@ -74,7 +74,7 @@ namespace PhotoSharingApplication.Controllers
             context.SaveChanges();
 
             var comments = from c in context.Comments
-                           where c.PhotoID == PhotoId
+                           where c.PhotoId == PhotoId
                            select c;
 
             ViewBag.PhotoId = PhotoId;

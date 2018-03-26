@@ -80,7 +80,7 @@ The main tasks for this exercise are as follows:
 1. Add a primary key property to the Photo model class by using the following information:
 
    - Scope: **public**
-   - Property name: **PhotoID**
+   - Property name: **PhotoId**
    - Data type: **integer**
    - Access: **Read and write**
 
@@ -125,14 +125,14 @@ The main tasks for this exercise are as follows:
 1. Add a primary key to the **Comment** model class by using the following information:
 
    - Scope: **public**
-   - Property name: **CommentID**
+   - Property name: **CommentId**
    - Data type: **integer**
    - Access: **Read and write**
 
-2. Add a **PhotoID** property to the **Comment** model class by using the following information:
+2. Add a **PhotoId** property to the **Comment** model class by using the following information:
 
    - Scope: **public**
-   - Property name: **PhotoID**
+   - Property name: **PhotoId**
    - Data type: **integer**
    - Access: **Read and write**
 
@@ -256,7 +256,7 @@ The main tasks for this exercise are as follows:
 5. Add each **photo** object in the **photos** list to the Entity Framework context, and then save the changes to the context.
 6. Create a new list of Comment objects in the **Seed** method. The list should contain one **Comment** object with the following properties:
 
-   - PhotoID: **1**
+   - PhotoId: **1**
    - UserName: **NaokiSato**
    - Subject: **Test Comment**
    - Body: **This comment should appear in photo 1**

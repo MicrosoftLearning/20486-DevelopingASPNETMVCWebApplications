@@ -36,9 +36,9 @@ namespace PhotoSharingApplication.Models
             return Set<T>().Add(entity);
         }
 
-        Photo IPhotoSharingContext.FindPhotoById(int ID)
+        Photo IPhotoSharingContext.FindPhotoById(int Id)
         {
-            return Set<Photo>().Find(ID);
+            return Set<Photo>().Find(Id);
         }
 
         Photo IPhotoSharingContext.FindPhotoByTitle(string Title)
@@ -49,9 +49,9 @@ namespace PhotoSharingApplication.Models
             return photo;
         }
 
-        Comment IPhotoSharingContext.FindCommentById(int ID)
+        Comment IPhotoSharingContext.FindCommentById(int Id)
         {
-            return Set<Comment>().Find(ID);
+            return Set<Comment>().Find(Id);
         }
 
         T IPhotoSharingContext.Delete<T>(T entity)

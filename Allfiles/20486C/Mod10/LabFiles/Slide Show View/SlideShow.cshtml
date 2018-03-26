@@ -16,13 +16,13 @@
 
         <div class="slide-show-card">
             <h3>
-                @Html.ActionLink(item.Title, "Details", new { id = item.PhotoID })
+                @Html.ActionLink(item.Title, "Details", new { id = item.PhotoId })
             </h3>
             <p>
                 By @Html.DisplayFor(modelItem => item.UserName)
             </p>
             @if (item.PhotoFile != null) {
-                <img height="530" src="@Url.Action("GetImage", "Photo", new { id = item.PhotoID })" />
+                <img height="530" src="@Url.Action("GetImage", "Photo", new { id = item.PhotoId })" />
             }
         </div>
         

@@ -131,12 +131,12 @@ The main tasks for this exercise are as follows:
 7. Add the **FindPhotoById** method to the **IPhotoSharingContext** interface by using the following information:
 
    - Return type: **Photo**
-   - Parameter: an integer named **ID**
+   - Parameter: an integer named **Id**
 
 8. Add the **FindCommentById** method to the **IPhotoSharingContext** interface by using the following information:
 
    - Return type: **Comment**
-   - Parameter: an integer named **ID**
+   - Parameter: an integer named **Id**
 
 9. Add the **Delete** method to the **IPhotoSharingContext** interface by using the following information:
 
@@ -148,8 +148,8 @@ The main tasks for this exercise are as follows:
 12. In the **PhotoSharingContext** class, implement the **Comments** property from the **IPhotoSharingContext** interface and return the **Comments** collection for the **get** method.
 13. In the **PhotoSharingContext** class, implement the **SaveChanges** method from the **IPhotoSharingContext** interface and return the results of the **SaveChanges** method.
 14. In the **PhotoSharingContext** class, implement the **Add** method from the **IPhotoSharingContext** interface and return a  **Set&lt;T&gt;** collection with **entity** added.
-15. In the **PhotoSharingContext** class, implement the **FindPhotoById** method from the **IPhotoSharingContext** interface and return the **Photo** object with requested **ID**.
-16. In the **PhotoSharingContext** class, implement the **FindCommentById** method from the **IPhotoSharingContext** interface and return the **Comment** object with requested **ID**.
+15. In the **PhotoSharingContext** class, implement the **FindPhotoById** method from the **IPhotoSharingContext** interface and return the **Photo** object with requested **Id**.
+16. In the **PhotoSharingContext** class, implement the **FindCommentById** method from the **IPhotoSharingContext** interface and return the **Comment** object with requested **Id**.
 17. In the **PhotoSharingContext** class, implement the **Delete** method from the **IPhotoSharingContext** interface and return a  **Set&lt;T&gt;** collection with **entity** removed.
 18. Save all the changes and build the project.
 
@@ -187,7 +187,7 @@ The main tasks for this exercise are as follows:
 6. In the **Test\_GetImage\_Return\_Type** method, create a new instance of the **FakePhotoSharingContext** class.
 7. Add four new **Photo** objects to the **context.Photos** collection. Use the following information to add each new **Photo**  object:
 
-   - PhotoID: a unique integer value
+   - PhotoId: a unique integer value
    - PhotoFile: a new byte array of length 1
    - ImageMimeType: **image/jpeg**
 
@@ -302,7 +302,7 @@ The main tasks for this exercise are as follows:
 1. Start debugging and display **Sample Photo 5**.
 2. In the **Microsoft Edge** window, request the relative URL and view the error details.
 
-   - URL: **/Photo/Display/malformedID**
+   - URL: **/Photo/Display/malformedId**
 
 3. In the **Microsoft Edge** window, request the relative URL.
 

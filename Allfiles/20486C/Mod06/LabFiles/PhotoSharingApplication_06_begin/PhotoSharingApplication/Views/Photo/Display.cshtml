@@ -14,7 +14,7 @@
 <body>
     <div> 
         <h2>"@Model.Title"</h2>
-        <img width="800" src="@Url.Action("GetImage", "Photo", new { id = Model.PhotoID })" />
+        <img width="800" src="@Url.Action("GetImage", "Photo", new { id = Model.PhotoId })" />
 
         <p>
             @Html.DisplayFor(model => model.Description)

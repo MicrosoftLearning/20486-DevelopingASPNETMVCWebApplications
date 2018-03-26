@@ -68,7 +68,7 @@ The main tasks for this exercise are as follows:
    - Method: **Url.Action()**
    - Action name: **GetImage**
    - Controller name: **Photo**
-   - Route values: **new { id=Model.PhotoID }**
+   - Route values: **new { id=Model.PhotoId }**
 
 5. Add a **P** element to display the **Description**  property from the model by using the following information:
 
@@ -248,7 +248,7 @@ The main tasks for this exercise are as follows:
 
    - Action: **GetImage**
    - Controller: **Photo**
-   - Parameters: for the **id** parameter, pass **item.PhotoID**
+   - Parameters: for the **id** parameter, pass **item.PhotoId**
 
 6. After the **if** statement, add a **P** element, and call the **@Html.DisplayFor** helper to render the words **Created By:** followed by the value of the **item.UserName** property.
 7. After the **UserName** display controls, add a **P** element, and call the **@Html.DisplayFor** helper to render the words  **Created On:** followed by the value of the **item.CreatedDate** property.
@@ -256,7 +256,7 @@ The main tasks for this exercise are as follows:
 
    - Link text: **Display**
    - View name: **Display**
-   - Parameters: pass the **item.PhotoID** value as the **id** parameter
+   - Parameters: pass the **item.PhotoId** value as the **id** parameter
 
 9. Save the **_PhotoGallery.cshtml** file.
 

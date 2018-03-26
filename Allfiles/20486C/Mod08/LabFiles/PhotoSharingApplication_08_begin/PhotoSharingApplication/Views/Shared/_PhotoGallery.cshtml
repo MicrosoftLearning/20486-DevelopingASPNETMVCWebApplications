@@ -8,7 +8,7 @@
         @if (item.PhotoFile != null)
         {
             <div>
-                <img width="200" src="@Url.Action("GetImage", "Photo", new { id = item.PhotoID })" />
+                <img width="200" src="@Url.Action("GetImage", "Photo", new { id = item.PhotoId })" />
             </div>
         }
 
@@ -34,7 +34,7 @@
 
         </div>
 
-        @Html.ActionLink("Display", "Display", new { id = item.PhotoID }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.PhotoID })
+        @Html.ActionLink("Display", "Display", new { id = item.PhotoId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.PhotoId })
     </div>
 }

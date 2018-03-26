@@ -10,8 +10,8 @@ namespace PhotoSharingApplication.Models
 {
     public class Photo
     {
-        //PhotoID. This is the primary key
-        public int PhotoID { get; set; }
+        //PhotoId. This is the primary key
+        public int PhotoId { get; set; }
 
         //Title. The title of the photo
         [Required]

@@ -51,7 +51,7 @@ function DisplayPics(response) {
         pin = new Microsoft.Maps.Pushpin(location);
 
         pin.Title = photo.Title;
-        pin.ID = photo.PhotoID;
+        pin.ID = photo.PhotoId;
 
         Microsoft.Maps.Events.addHandler(pin, 'click', DisplayInfoBox);
 

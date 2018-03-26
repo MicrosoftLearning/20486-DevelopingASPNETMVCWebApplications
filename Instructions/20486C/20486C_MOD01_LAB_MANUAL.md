@@ -233,15 +233,14 @@ The main tasks for this exercise are as follows:
 
 #### Task 1: Create an MVC 5 application.
 
-1. Start Visual Studio 2017 and create a new **MVC** project by using the **ASP.NET Web Application** template. Choose the **Internet Application** template.
+1. Start Visual Studio 2017 and create a new **MVC** project by using the **ASP.NET Web Application** template. Choose the **MVC** template.
 2. Run the new MVC application in Microsoft Edge, and explore the **Contact** page.
 3. Stop debugging by closing Microsoft Edge.
 
 #### Task 2: Explore the application structure.
 
-1. Open the **Web.config** file and verify whether the database provider is **System.Data.SqlClient**.
-2. Verify that the ~/Views/Shared/\_Layout.cshtml file contains a common layout for all pages on the website, and how pages link to the layout.
-3. Verify that the Site.css file is used to apply styles to all pages on the website, and note how the pages link to the style sheet.
+1. Verify that the ~/Views/Shared/\_Layout.cshtml file contains a common layout for all pages on the website, and how pages link to the layout.
+2. Verify that the Site.css file is used to apply styles to all pages on the website, and note how the pages link to the style sheet.
 
 #### Task 3: Add simple functionality.
 

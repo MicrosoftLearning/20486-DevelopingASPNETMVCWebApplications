@@ -77,7 +77,7 @@ The main tasks for this exercise are as follows:
 
 6. In the **Join** method, return the result of the **Groups.Add()** method by using the following information:
 
-   - Connection ID: **Context.ConnectionId**
+   - Connection Id: **Context.ConnectionId**
    - Group name: **&quot;Photo&quot; + photoId**
 
 7. In the **ChatHub** class, create a new method by using following information:
@@ -154,14 +154,14 @@ The main tasks for this exercise are as follows:
 
 #### Task 2: Link to the chat view.
 
-1. In the **Display.cshtml** view file, after the **DIV** element with the ID **addtofavorites**, add a new **DIV** element, with the ID **chataboutthisphoto**.
+1. In the **Display.cshtml** view file, after the **DIV** element with the Id **addtofavorites**, add a new **DIV** element, with the Id **chataboutthisphoto**.
 
 2. In the new **DIV** element, render a link to the **Chat** view by using the following information:
 
    - Helper: **Html.ActionLink()**
    - Text: **Chat about this photo**
    - View: **Chat**
-   - Route values: pass the **Model.PhotoID** value to the **id** parameter.
+   - Route values: pass the **Model.PhotoId** value to the **id** parameter.
 
 3. Start the web application in the debugging mode, display a photo of your choice, and then click **Chat**.
 4. Sign in with the following credentials:
@@ -177,7 +177,7 @@ The main tasks for this exercise are as follows:
 1. Add a new **SCRIPT** element at the end of the **Chat.cshtml** view file, with type **text/javascript**.
 
 2. In the new **SCRIPT** element, create a new variable named **username**. In a new Razor code block, use the **User.Identity.Name** property to set the value for the variable.
-3. Create a second new variable named **photoid** and use the **Model.PhotoID** property to set the value for the variable.
+3. Create a second new variable named **photoid** and use the **Model.PhotoId** property to set the value for the variable.
 4. Add a new **SCRIPT** element, with type **text/javascript**, and an empty **src** attribute.
 5. In the new script element, use the **Url.Content()** helper to set the **src** attribute to the following path:
 
@@ -203,7 +203,7 @@ The main tasks for this exercise are as follows:
 
 2. In the new JavaScript file, use jQuery to create an anonymous function that runs when the page loads.
 3. Use the **$.connection.chatHub** property to obtain the **ChatHub** you already created, and then store the hub in a variable named **chat**.
-4. Use jQuery to set the initial focus on the element with the ID **chat-message**.
+4. Use jQuery to set the initial focus on the element with the Id **chat-message**.
 5. Create an anonymous function that runs when the **$.connection.hub.start()** method is done.
 6. Call the **chat.server.join()** function on the SignalR hub, pass the **photoid** value as a parameter, and then create an anonymous function that runs when the function is done.
 7. Save all the changes.
@@ -215,15 +215,15 @@ The main tasks for this exercise are as follows:
 2. In the new function, create a variable named **encodedName**, and use jQuery to set this variable to a new **&lt;div&gt;** with the **name** parameter as its HTML content.
 3. In the new function, create a variable named **encodedMessage**, and use jQuery to set this variable to a new **&lt;div&gt;** with the **message** parameter as its HTML content.
 4. Create a new variable named **listItem**. Set the value of this variable to an HTML **LI** element that includes the **encodedName** and **encodedMessage** variables.
-5. Append the **listItem** element to the page element with the ID **discussion**.
-6. In the function that runs when the **chat.server.join()** method is done, create an anonymous function that runs when the button with the ID **sendmessage** is clicked.
+5. Append the **listItem** element to the page element with the Id **discussion**.
+6. In the function that runs when the **chat.server.join()** method is done, create an anonymous function that runs when the button with the Id **sendmessage** is clicked.
 7. In the new anonymous function, call the **chat.server.send()** method by using the following information:
 
    - User name: **username**
-   - Photo ID: **photoid**
-   - Message: use the value of the element with the ID **chat-message**
+   - Photo Id: **photoid**
+   - Message: use the value of the element with the Id **chat-message**
 
-8. Use jQuery to obtain the element with the ID **chat-message**, set its value to an empty string, and give it the focus.
+8. Use jQuery to obtain the element with the Id **chat-message**, set its value to an empty string, and give it the focus.
 9. Save all the changes.
 
 #### Task 6: Test the chat room.

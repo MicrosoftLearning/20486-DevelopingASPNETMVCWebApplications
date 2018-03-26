@@ -20,7 +20,7 @@
 
         @if (Model.PhotoFile != null)
         {
-            <img width="800" src="@Url.Action("GetImage", "Photo", new { id=Model.PhotoID })" />
+            <img width="800" src="@Url.Action("GetImage", "Photo", new { id=Model.PhotoId })" />
         }
 
 
@@ -67,6 +67,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.PhotoID }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PhotoId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

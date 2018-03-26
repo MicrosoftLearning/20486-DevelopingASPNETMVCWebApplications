@@ -64,7 +64,7 @@ The main tasks for this exercise are as follows:
 	- Name: **_CommentsForPhoto**
 	- Parameter: an integer named **PhotoId**
 
-2. In the **_CommentsForPhoto** action, select all the comments in the database that have a **PhotoID** value equal to the **PhotoId** parameter, by using a LINQ query.
+2. In the **_CommentsForPhoto** action, select all the comments in the database that have a **PhotoId** value equal to the **PhotoId** parameter, by using a LINQ query.
 3. Save the **PhotoId** parameter value in the **ViewBag** collection to use it later in the view.
 4. Return a partial view as the result of the **_CommentsForPhoto** action by using the following information:
 
@@ -83,18 +83,18 @@ The main tasks for this exercise are as follows:
 
 	- Heading: **Comments**
 
-8. After the heading, create a **DIV** element with the ID **comments-tool**. Within this **DIV** element, create a second **DIV** element with the ID **all-comments**.
+8. After the heading, create a **DIV** element with the Id **comments-tool**. Within this **DIV** element, create a second **DIV** element with the Id **all-comments**.
 9. For each item in the model, render a **DIV** element with the **photo-comment** class.
 10. Within the **&lt;div class=&quot;photo-comment&quot;&gt;** element, add a **DIV** element with the **photo-comment-from** class. Within this **DIV** element, render the **UserName** value of the model item by using the **Html.DisplayFor()** helper.
 11. Add a **DIV** element with the **photo-comment-subject** class. Within this **DIV** element, render the **Subject** value of the model item by using the **Html.DisplayFor()** helper.
 12. Add a **DIV** element with the **photo-comment-body** class. Within this **DIV** element, render the **Body** value of the model item by using the **Html.DisplayFor()** helper.
-13. Render a link to the **Delete** action by using the **Html.ActionLink()** helper. Pass the **item.CommentID** value as the **id** parameter.
+13. Render a link to the **Delete** action by using the **Html.ActionLink()** helper. Pass the **item.CommentId** value as the **id** parameter.
 14. In the **Views/Photo/Display.cshtml** view file, just before the **Back To List** link, render the **_CommentsForPhoto** partial view by using the following information:
 
 	- Helper: **Html.Action()**
 	- Action: **_CommentsForPhoto**
 	- Controller: **Comment**
-	- *PhotoId parameter: **Model.PhotoID**
+	- *PhotoId parameter: **Model.PhotoId**
 
 15. Run the application in debugging mode and browse to **Sample Photo 1**. Observe the display of comments on the page.
 16. Close Microsoft Edge.
@@ -108,7 +108,7 @@ The main tasks for this exercise are as follows:
 	- Name: **_Create**
 	- Parameter: an integer named **PhotoId**.
 
-2. In the **_Create** action, create a new **Comment** object and set its **PhotoID** property to equal the **PhotoId** parameter.
+2. In the **_Create** action, create a new **Comment** object and set its **PhotoId** property to equal the **PhotoId** parameter.
 3. Save the **PhotoId** parameter value in the **ViewBag** collection to use it later in the view.
 4. Return a partial view named **_CreateAComment**.
 5. Add a new partial view for creating new comments by using the following information:
@@ -120,10 +120,10 @@ The main tasks for this exercise are as follows:
 
 6. In the **_CreateAComment** view, render validation messages by using the **Html.ValidationSummary()** helper. For the **excludePropertyErrors** parameter, pass **true**.
 7. After the validation messages, add a **DIV** element with the **add-comment-tool** class.
-8. Within the **&lt;div class=&quot;add-comment-tool&quot;&gt;** element, add a **DIV** element with no class or ID.
+8. Within the **&lt;div class=&quot;add-comment-tool&quot;&gt;** element, add a **DIV** element with no class or Id.
 9. Within the **DIV** element you just created, add a **SPAN** element with the **editor-label** class and content **Subject:**
 10. After the **SPAN** element you just created, add a second **SPAN** element with the **editor-field** class. Within this element, render the **Subject** property of the model by using the **Html.EditorFor()** helper.
-11. Within the **&lt;div class=&quot;add-comment-tool&quot;&gt;** element, add a second **DIV** element with no class or ID.
+11. Within the **&lt;div class=&quot;add-comment-tool&quot;&gt;** element, add a second **DIV** element with no class or Id.
 12. Within the **DIV** element you just created, add a **SPAN** element with the **editor-label** class and content **Body:**
 13. After the **SPAN** element you just created, add a second **SPAN** element with the **editor-field** class.Within this element, render the **Body** property of the model by using the **Html.EditorFor()** helper.
 14. Within the **&lt;div class=&quot;add-comment-tool&quot;&gt;** element, add an **INPUT** element by using the following information:
@@ -146,7 +146,7 @@ The main tasks for this exercise are as follows:
 	- Parameter: an integer named **PhotoId**.
 
 2. In the **_ComentForPhoto** action, add the **comment** object to the **context** and save the changes to the **context**.
-3. Select all the comments in the database that have a **PhotoID** value equal to the **PhotoId** parameter by using a LINQ query.
+3. Select all the comments in the database that have a **PhotoId** value equal to the **PhotoId** parameter by using a LINQ query.
 4. Save the **PhotoId** parameter value in the **ViewBag** collection to use it later in the view.
 5. Return a partial view as the result of the **_CommentsForPhoto** action by using the following information:
 
@@ -164,7 +164,7 @@ The main tasks for this exercise are as follows:
 	- PhotoId parameter: **ViewBag.PhotoId**
 	- Ajax options: **UpdateTargetId = &quot;comment-tool&quot;**
 
-2. In the form code block, in the **&lt;div class=&quot;comments-tool&quot;&gt;** element, add a new **DIV** element with the **add-comment-box** class and the ID **add-comment**.
+2. In the form code block, in the **&lt;div class=&quot;comments-tool&quot;&gt;** element, add a new **DIV** element with the **add-comment-box** class and the Id **add-comment**.
 3. In the **DIV** element you just created, render the **_Create** action of the **Comment** controller by using the **Html.Action()** helper. Pass the **ViewBag.PhotoId** value as the **PhotoId** parameter.
 4. Add script tags to the **_MainLayout.cshtml** page that reference the following content delivery network (CDN) locations:
 

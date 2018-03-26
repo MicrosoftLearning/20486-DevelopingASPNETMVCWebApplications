@@ -129,19 +129,19 @@ namespace PhotoSharingApplication.Models
             var comments = new List<Comment>
             {
                 new Comment {
-                    PhotoID = 1,
+                    PhotoId = 1,
                     UserName = "JamieStark",
                     Subject = "Sample Comment 1",
                     Body = "This is the first sample comment in the Adventure Works photo application"
                 },
                 new Comment {
-                    PhotoID = 1,
+                    PhotoId = 1,
                     UserName = "JimCorbin",
                     Subject = "Sample Comment 2",
                     Body = "This is the second sample comment in the Adventure Works photo application"
                 },
                 new Comment {
-                    PhotoID = 3,
+                    PhotoId = 3,
                     UserName = "RogerLengel",
                     Subject = "Sample Comment 3",
                     Body = "This is the third sample photo in the Adventure Works photo application"

@@ -27,7 +27,7 @@ namespace PhotoSharingApplication.Controllers
         public ActionResult Delete(int id = 0)
         {
             Comment comment = context.FindCommentById(id);
-            ViewBag.PhotoID = comment.PhotoID;
+            ViewBag.PhotoId = comment.PhotoId;
             if (comment == null)
             {
                 return HttpNotFound();
@@ -43,7 +43,7 @@ namespace PhotoSharingApplication.Controllers
             Comment comment = context.FindCommentById(id);
             context.Delete<Comment>(comment);
             context.SaveChanges();
-            return RedirectToAction("Display", "Photo", new { id = comment.PhotoID });
+            return RedirectToAction("Display", "Photo", new { id = comment.PhotoId });
         }
 
     }

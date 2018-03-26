@@ -28,7 +28,7 @@ namespace PhotoSharingTests
         }
 
         [TestMethod]
-        public void Test_Photo_Route_With_PhotoID()
+        public void Test_Photo_Route_With_PhotoId()
         {
             var context = new FakeHttpContextForRouting(requestUrl: "~/photo/2");
 

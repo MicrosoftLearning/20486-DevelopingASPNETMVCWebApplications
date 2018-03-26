@@ -11,7 +11,7 @@
 @using (Html.BeginForm("Delete", "Photo", FormMethod.Post))
 {
     <div class="photo-display">
-        <img width="200" src="@Url.Action("GetImage", "Photo", new { id = Model.PhotoID })" />
+        <img width="200" src="@Url.Action("GetImage", "Photo", new { id = Model.PhotoId })" />
     </div>
 
     <div class="photo-description">

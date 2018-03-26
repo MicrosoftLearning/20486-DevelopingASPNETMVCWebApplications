@@ -56,7 +56,7 @@ The main tasks for this exercise are as follows:
 5. If **favoriteIds** is null, set **favoriteIds** to be a new enumerable list of integers.
 6. Create a new **Photo** object named **currentPhoto**. Do not instantiate the new object.
 7. Create a new **foreach** code block that loops through all the integers in the **favoriteIds** list.
-8. For each integer in the **favoriteIds** list, obtain the **Photo** object with the right ID value by using the **context.FindPhotoById()** method. Store the object in the **currentPhoto** variable.
+8. For each integer in the **favoriteIds** list, obtain the **Photo** object with the right Id value by using the **context.FindPhotoById()** method. Store the object in the **currentPhoto** variable.
 9. If the **currentPhoto** variable is not equal to **null**, then add **currentPhoto** to the **favPhotos** list.
 10. At the end of the **FavoritesSlideShow** action, return the **SlideShow** view and pass the **favPhotos** list as a model class.
 11. Save all the changes.
@@ -107,15 +107,15 @@ The main tasks for this exercise are as follows:
 #### Task 1: Add an AJAX action link in the Photo Display view.
 
 1. Open the **Display.cshtml** view for the **Photo** controller.
-2. At the end of the **&lt;div class=&quot;photo-metadata&quot;&gt;** element, insert a new **&lt;div&gt;** element with the ID, **addtofavorites**.
+2. At the end of the **&lt;div class=&quot;photo-metadata&quot;&gt;** element, insert a new **&lt;div&gt;** element with the Id, **addtofavorites**.
 3. In the **DIV** element, include the **Ajax.ActionLink()** helper to render a link to the **AddFavorite** action by using the following information:
 
     - Text: **Add this photo to your favorites**
     - Action: **AddFavorite**
     - Controller: **Photo**
-    - Route values: Pass the **Model.PhotoID** value to the **PhotoId** action parameter.
+    - Route values: Pass the **Model.PhotoId** value to the **PhotoId** action parameter.
     - Pass a new **AjaxOptions** object.
-    - Update target ID: **addtofavorites**
+    - Update target Id: **addtofavorites**
     - HTTP method: **GET**
     - Insertion mode: **Replace**
 
@@ -125,7 +125,7 @@ The main tasks for this exercise are as follows:
 
 1. Open the **_MainLayout.cshtml** view for editing.
 2. After the breadcrumb trail, add a Razor **@if** statement to ensure that the **Session[&quot;Favorites&quot;]** variable is not null.
-3. If the **Session[&quot;Favorites&quot;]** variable is not null, render a **&lt;div&gt;** element with the ID, **favorites-link**.
+3. If the **Session[&quot;Favorites&quot;]** variable is not null, render a **&lt;div&gt;** element with the Id, **favorites-link**.
 4. In the **DIV** element, render a link to the **FavoritesSlideShow** action by using the following information:
 
     - Helper: **Html.ActionLink()**
@@ -138,7 +138,7 @@ The main tasks for this exercise are as follows:
 7. Add a new site map node to the **Mvc.sitemap** file by using the following information:
 
     - Title: **Favorites**
-    - Visibility: **SiteMapPathHelper,!\\***
+    - Visibility: **SiteMapPathHelper,!***
     - Controller: **Photo**
     - Action: **FavoritesSlideShow**
 

@@ -8,8 +8,8 @@ An important design priority for the Photo Sharing application is that the visit
 
 You have been asked to ensure that the URLs of the following forms work to display a photo:
 
-- ~/photo/display/_PhotoId_.In this form of URL, PhotoId is the database ID of the photo object. This form of URL already works because it matches the default route.
-- ~/photo/_PhotoId_.In this form of URL, PhotoId is the database ID of the photo object. This is the logical URL to enter when you know the ID of the photo that you want to access.
+- ~/photo/display/_PhotoId_.In this form of URL, PhotoId is the database Id of the photo object. This form of URL already works because it matches the default route.
+- ~/photo/_PhotoId_.In this form of URL, PhotoId is the database Id of the photo object. This is the logical URL to enter when you know the Id of the photo that you want to access.
 - ~/photo/title/_PhotoTitle_. In this form of URL,PhotoTitle is the title of the photo object. This is the logical URL to enter when you know the title of the photo that you want to access.
 
 You have also been asked to implement the following navigation controls in the Photo Sharing application:
@@ -46,7 +46,7 @@ The main tasks for this exercise are as follows:
 
 1. Test the routing configuration.
 
-2. Add and test the Photo ID route.
+2. Add and test the Photo Id route.
 
 3. Add and test the Photo Title route.
 
@@ -95,8 +95,8 @@ The main tasks for this exercise are as follows:
     - That the **action** value in **routeData**  is &quot;Index&quot;
     - That the **id** value in **routeData**  is &quot;UrlParameter.Optional&quot;
     
-11. Add a new test to the **RoutingTests** class named, **Test_Photo_Route_With_PhotoID**.
-12. In the **Test_Photo_Route_With_PhotoID()** test method, create a new **var** by using the following information:
+11. Add a new test to the **RoutingTests** class named, **Test_Photo_Route_With_PhotoId**.
+12. In the **Test_Photo_Route_With_PhotoId()** test method, create a new **var** by using the following information:
 
     - Name: **context**
     - Type: **FakeHttpContextForRouting**
@@ -143,7 +143,7 @@ The main tasks for this exercise are as follows:
 
    >**Note:** Two of the tests should fail because the routes that they test do not yet exist.
 
-#### Task 2: Add and test the Photo ID route.
+#### Task 2: Add and test the Photo Id route.
 
 1. Open the **RouteConfig.cs** file in the **PhotoSharingApplication** project.
 2. Add a new route to the Photo Sharing application by using the following information. Add the new route before the default route:

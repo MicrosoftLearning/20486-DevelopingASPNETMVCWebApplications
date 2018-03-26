@@ -129,7 +129,7 @@ The main tasks for this exercise are as follows:
 #### Task 4: Test the Web API with Microsoft Edge.
 
 1. Start that web application in the debugging mode.
-2. Request the photo with ID 4 by using the Web API. Display the returned JSON file by using Visual Studio and check that the **Title** property is **Sample Photo 4**.
+2. Request the photo with Id 4 by using the Web API. Display the returned JSON file by using Visual Studio and check that the **Title** property is **Sample Photo 4**.
 3. Request the photo with title **Sample Photo 5** by using the Web API. Display the returned JSON file by using Visual Studio and check that the **Title** property is **Sample Photo 5**.
 4. Close Visual Studio and stop debugging.
 
@@ -202,7 +202,7 @@ The main tasks for this exercise are as follows:
 10. Use the **Url.Content()** helper to set the **src** attribute in the new JavaScript code to **~/Scripts/MapDisplay.js**.
 11. Create a new **DIV** element by using the following information:
 
-    - ID: **mapDiv**
+    - Id: **mapDiv**
     - Style position: **absolute**
     - Style width: **650px**
     - Style height: **400px**
@@ -284,7 +284,7 @@ The main tasks for this exercise are as follows:
     - Object: **Microsoft.Maps.Pushpin**
     - Location: **location**
 
-9. Set the **pin.Title** property to **photo.Title** and the **pin.ID** property to **photo.PhotoID**.
+9. Set the **pin.Title** property to **photo.Title** and the **pin.Id** property to **photo.PhotoId**.
 10. Ensure that the **DisplayInfoBox** method handles the **click** event for pushpins by using the following information:
 
     - Method: **Microsoft.Maps.Events.addHandler**

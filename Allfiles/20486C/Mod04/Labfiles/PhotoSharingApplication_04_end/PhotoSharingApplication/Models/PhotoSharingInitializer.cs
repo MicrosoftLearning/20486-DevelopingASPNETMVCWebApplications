@@ -62,19 +62,19 @@ namespace PhotoSharingApplication.Models
             var comments = new List<Comment>
             {
                 new Comment {
-                    PhotoID = 1,
+                    PhotoId = 1,
                     UserName = "Bert",
                     Subject = "A Big Mountain",
                     Body = "That looks like a very high mountain you have climbed"
                 },
                 new Comment {
-                    PhotoID = 1,
+                    PhotoId = 1,
                     UserName = "Sue",
                     Subject = "So?",
                     Body = "I climbed a mountain that high before breakfast everyday"
                 },
                 new Comment {
-                    PhotoID = 2,
+                    PhotoId = 2,
                     UserName = "Fred",
                     Subject = "Jealous",
                     Body = "Wow, that new bike looks great!"

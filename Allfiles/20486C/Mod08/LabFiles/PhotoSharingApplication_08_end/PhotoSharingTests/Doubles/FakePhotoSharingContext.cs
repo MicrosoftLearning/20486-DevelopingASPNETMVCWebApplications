@@ -42,10 +42,10 @@ namespace PhotoSharingTests.Doubles
             return entity;
         }
 
-        public Photo FindPhotoById(int ID)
+        public Photo FindPhotoById(int Id)
         {
             Photo item = (from p in this.Photos
-                    where p.PhotoID == ID
+                    where p.PhotoId == Id
                     select p).First();
  
             return item;
@@ -60,10 +60,10 @@ namespace PhotoSharingTests.Doubles
             return item;
         }
 
-        public Comment FindCommentById(int ID)
+        public Comment FindCommentById(int Id)
         {
             Comment item = (from c in this.Comments
-                          where c.CommentID == ID
+                          where c.CommentId == Id
                           select c).First();
             return item;
         }

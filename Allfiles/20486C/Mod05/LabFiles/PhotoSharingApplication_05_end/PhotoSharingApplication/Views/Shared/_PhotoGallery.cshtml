@@ -6,7 +6,7 @@
 
     if (item.PhotoFile != null)
     {
-        <img width="200" src="@Url.Action("GetImage","Photo", new { id = item.PhotoID })" />
+        <img width="200" src="@Url.Action("GetImage","Photo", new { id = item.PhotoId })" />
     }
 
     <p>
@@ -17,5 +17,5 @@
         Created On:  @Html.DisplayFor(model => item.CreatedDate)
     </p>
 
-    @Html.ActionLink("Display", "Display", new { id = item.PhotoID })
+    @Html.ActionLink("Display", "Display", new { id = item.PhotoId })
 }

@@ -4,7 +4,7 @@
 
 #### Scenario
 
-You have been asked to add a slideshow page to the web application that will show all the photos in the database. Unlike the **All Photos** gallery, which shows thumbnail images, the slideshow will display each photo in a large size. However, the slideshow will display only one photo at a time, and cycle through all the photosin the order of ID.
+You have been asked to add a slideshow page to the web application that will show all the photos in the database. Unlike the **All Photos** gallery, which shows thumbnail images, the slideshow will display each photo in a large size. However, the slideshow will display only one photo at a time, and cycle through all the photosin the order of Id.
 
 You want to use jQuery to create this slideshow because you want to cycle through the photos in the browser, without reloading the page each time. You also want to animate slide transitions and show a progress bar that illustrates the position of the current photo in the complete list. You will use jQueryUI to generate the progress bar.
 
@@ -100,10 +100,10 @@ The main tasks for this exercise are as follows:
    Set the **percentCurrent** value to **100**.
 
 4. Create a new **function** named **slideSwitch** with no parameters.
-5. Within the **slideSwitch** function, add a line of code that selects the first **&lt;div&gt;** element with **active-card** class that is a child of the element with an ID of **slide-show**. Store this element in a new variable named **$activeCard**.
-6. Add an **if** statement stating that if the **$activeCard** contains no elements, use the last **DIV** element with **slide-show-card** class that is a child of the element with an ID of **slide-show**.
+5. Within the **slideSwitch** function, add a line of code that selects the first **&lt;div&gt;** element with **active-card** class that is a child of the element with an Id of **slide-show**. Store this element in a new variable named **$activeCard**.
+6. Add an **if** statement stating that if the **$activeCard** contains no elements, use the last **DIV** element with **slide-show-card** class that is a child of the element with an Id of **slide-show**.
 7. Add a line of code that selects the next element after **$activeCard**. Store this element in a new variable named **$nextCard**.
-8. Add an **if** statement stating that if **$nextCard** contains no elements, use the first **DIV** element with **slide-show-card** class and ID **slide-show**.
+8. Add an **if** statement stating that if **$nextCard** contains no elements, use the first **DIV** element with **slide-show-card** class and Id **slide-show**.
 9. Add the **last-active-card** class to the **$activeCard** element.
 10. Set the opacity of the **$nextCard** element to **0.0** by using the **css()** jQuery function.
 11. Add the **active-card** class to the **$nextCard** element. This applies the **z-order** value **10**, from the style sheet.
@@ -147,7 +147,7 @@ The main tasks for this exercise are as follows:
 #### Task 1: Complete the slideshow view and template view.
 
 1. Open the **SlideShow.cshtml** view file from the **Photo** folder.
-2. Within the **&lt;div id=&quot;slideshow-progress-bar-container&quot;&gt;** element, add a new **&lt;div&gt;** element with the ID **slide-show-progress-bar.**
+2. Within the **&lt;div id=&quot;slideshow-progress-bar-container&quot;&gt;** element, add a new **&lt;div&gt;** element with the Id **slide-show-progress-bar.**
 3. Add a **&lt;script&gt;** tag to the **Views/Shared/\_MainLayout.cshtml** view to link the view to jQuery UI. Ensure that the **&lt;script&gt;** tag appears after the other **&lt;script&gt;** tags in the **HEAD** element. Link the view to the following location: **http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.0/jquery-ui.min.js**
 4. Add a **&lt;link&gt;** tag to link to the jQuery UI style sheet by using the following information:
 

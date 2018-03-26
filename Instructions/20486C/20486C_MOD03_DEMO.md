@@ -25,12 +25,12 @@ https://github.com/MicrosoftLearning/20486-DevelopingASPNETMVCWebApplications/tr
 11. In the **Opera** class of the **Opera.cs** code window, type the following code.
 
   ```cs
-        public int OperaID { get; set; }
+        public int OperaId { get; set; }
         public string Title { get; set; }
         public int Year { get; set; }
         public string Composer { get; set; }
 ```
-12. Place the mouse cursor at the end of the **OperaID** property code, press Enter, and then type the following code.
+12. Place the mouse cursor at the end of the **OperaId** property code, press Enter, and then type the following code.
 
   ```cs
         [Required]
