@@ -143,7 +143,7 @@ The main tasks for this exercise are as follows:
    - Return type: **T**, where **T** is any class.
    - Parameter: An instance of **T** named **entity**.
 
-10. Ensure that the **PhotoSharingContext** class implements the **IPhotoSharingContent** interface.
+10. Ensure that the **PhotoSharingContext** class implements the **IPhotoSharingContext** interface.
 11. In the **PhotoSharingContext** class, implement the **Photos** property from the **IPhotoSharingContext** interface and return the **Photos** collection for the **get** method.
 12. In the **PhotoSharingContext** class, implement the **Comments** property from the **IPhotoSharingContext** interface and return the **Comments** collection for the **get** method.
 13. In the **PhotoSharingContext** class, implement the **SaveChanges** method from the **IPhotoSharingContext** interface and return the results of the **SaveChanges** method.
